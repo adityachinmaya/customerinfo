@@ -15,11 +15,9 @@ public class infoController {
 	    @FXML
 	    private Button save;
 	    @FXML
-	    private Button clear;
-	    @FXML
 	    private TextField firstname;
 	    @FXML
-	    private TextField middleinitle;
+	    private TextField middleinital;
 	    @FXML
 	    private TextField lastname;
 	    @FXML
@@ -46,7 +44,7 @@ public class infoController {
 	    	}
 	    	
 	    	customer.setFirstName(firstname.getText());
-	    	customer.setMiddleInit(middleinitle.getText());
+	    	customer.setMiddleInit(middleinital.getText());
 	    	customer.setLastName(lastname.getText());
 	    	customer.setGender(Male);
 	    	customer.setAddress(address.getText());
@@ -61,7 +59,7 @@ public class infoController {
 	    private void handleButtonClickClear(ActionEvent event){
 	    	
 	    	firstname.setText(null);
-	    	middleinitle.setText(null);
+	    	middleinital.setText(null);
 	    	lastname.setText(null);
 	    	address.setText(null);
 	    	city.setText(null);
